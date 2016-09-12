@@ -1,0 +1,43 @@
+{
+  "name": "ember-fastboot-app-server",
+  "description": "Ember fastboot app hosting",
+  "keywords": [
+    "ember",
+    "fastboot",
+    "hosting",
+    "deploy"
+  ],
+  "website": "https://github.com/he9qi",
+  "addons": [
+    "papertrail:choklad"
+  ],
+  "env": {
+    "NODE_ENV": {
+      "value": "production"
+    },
+    "APP_NAME": {
+      "description": "Name of your emberjs app.",
+      "value": ""
+    },
+    "FASTBOOT_DEPLOY_INFO": {
+      "description": "Fastboot deploy info.",
+      "value": "fastboot-deploy-info.json"
+    },
+    "FASTBOOT_S3_BUCKET": {
+      "description": "Fastboot S3 bucket.",
+      "value": ""
+    },
+    "FASTBOOT_REDIS_HOST": {
+      "description": "Fastboot Redis host.",
+      "value": ""
+    },
+    "FASTBOOT_REDIS_PORT": {
+      "description": "Fastboot Redis port.",
+      "value": ""
+    },
+    "FASTBOOT_REDIS_EXPIRY": {
+      "description": "Fastboot Redis expiration.",
+      "value": 60
+    }
+  }
+}

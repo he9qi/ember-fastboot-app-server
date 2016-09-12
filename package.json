@@ -1,0 +1,34 @@
+{
+  "name": "ember-fastboot-app-server",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --harmony index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philipheinser/ember-lightning.git"
+  },
+  "keywords": [
+    "ember",
+    "hosting",
+    "server",
+    "deploy"
+  ],
+  "author": "Philip Heinser <philipheinser@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philipheinser/ember-lightning/issues"
+  },
+  "homepage": "https://github.com/philipheinser/ember-lightning",
+  "dependencies": {
+    "fastboot-app-server": "^1.0.0-beta.2",
+    "fastboot-redis-cache": "^0.1.0",
+    "fastboot-s3-downloader": "git://github.com/bcardarella/fastboot-s3-downloader.git#9b0c508288",
+    "fastboot-s3-notifier": "^0.1.1"
+  },
+  "engines": {
+    "node": "4.2.x"
+  }
+}
