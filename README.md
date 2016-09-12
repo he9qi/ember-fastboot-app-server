@@ -4,10 +4,6 @@
 
 ## environment variables
 
-### `APP_NAME`
-
-The name of the application as deployed in Redis.
-
 ### `FASTBOOT_DEPLOY_INFO`
 
 The deploy info used by `ember-fastboot-app-server` to fetch current build of ember-fastboot application. Defaults to `fastboot-deploy-info.json`
