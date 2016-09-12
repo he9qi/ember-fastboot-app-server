@@ -8,20 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/philipheinser/ember-lightning.git"
+    "url": "https://github.com/he9qi/ember-fastboot-app-server.git"
   },
   "keywords": [
     "ember",
     "hosting",
+    "fastboot",
     "server",
     "deploy"
   ],
-  "author": "Philip Heinser <philipheinser@me.com>",
+  "author": "Qi <qhe@heyook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/philipheinser/ember-lightning/issues"
+    "url": "https://github.com/he9qi/ember-fastboot-app-server/issues"
   },
-  "homepage": "https://github.com/philipheinser/ember-lightning",
+  "homepage": "https://github.com/he9qi/ember-fastboot-app-server",
   "dependencies": {
     "fastboot-app-server": "^1.0.0-beta.2",
     "fastboot-redis-cache": "^0.1.0",
