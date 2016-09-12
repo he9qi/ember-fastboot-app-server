@@ -17,7 +17,7 @@
     "server",
     "deploy"
   ],
-  "author": "Qi <qhe@heyook.com>",
+  "author": "Qi He <qhe@heyook.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/he9qi/ember-fastboot-app-server/issues"
