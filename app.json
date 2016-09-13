@@ -31,6 +31,10 @@
       "description": "Fastboot Redis port.",
       "value": ""
     },
+    "FASTBOOT_REDIS_URL": {
+      "description": "Fastboot Redis url.",
+      "value": ""
+    },
     "FASTBOOT_REDIS_EXPIRY": {
       "description": "Fastboot Redis expiration.",
       "value": "60"
