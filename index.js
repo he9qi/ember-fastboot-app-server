@@ -26,14 +26,16 @@ if (S3_REGION || S3_KEY || S3_SECRET) {
   s3 = null;
 }
 
-const S3_PARAMS = {
+const downloader = new S3Downloader({
   bucket: process.env.FASTBOOT_S3_BUCKET,
-  key: process.env.FASTBOOT_DEPLOY_INFO,
-  s3: s3
-};
-
-const downloader = new S3Downloader(S3_PARAMS);
-const notifier = new S3Notifier(S3_PARAMS);
+  key: process.env.FASTBOOT_DEPLOY_INFO || "fastboot-deploy-info.json",
+  s3: s3,
+  currentPath: process.env.DEPLOY_CURRENT_PATH
+});
+const notifier = new S3Notifier({
+  bucket: process.env.FASTBOOT_S3_BUCKET,
+  key: process.env.FASTBOOT_DEPLOY_INFO
+});
 
 let cache;
 if (REDIS_HOST || REDIS_PORT || REDIS_URL) {
