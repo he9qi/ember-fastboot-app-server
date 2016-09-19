@@ -23,6 +23,7 @@ if (S3_REGION || S3_KEY || S3_SECRET) {
     secretAccessKey: S3_SECRET
   });
 } else {
+  console.log('No FASTBOOT_S3_REGION or FASTBOOT_S3_KEY or FASTBOOT_S3_SECRET provided; s3 credentials not provided.');
   s3 = null;
 }
 
