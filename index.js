@@ -1,5 +1,5 @@
 "use strict";
-
+const AWS  = require('aws-sdk');
 const FastBootAppServer = require('fastboot-app-server');
 const S3Downloader = require('fastboot-s3-downloader');
 const RedisCache = require('fastboot-redis-cache');
@@ -10,9 +10,26 @@ const REDIS_PORT   = process.env.FASTBOOT_REDIS_PORT;
 const REDIS_EXPIRY = process.env.FASTBOOT_REDIS_EXPIRY;
 const REDIS_URL    = process.env.FASTBOOT_REDIS_URL;
 
+const S3_REGION = process.env.FASTBOOT_S3_REGION;
+const S3_KEY = process.env.FASTBOOT_S3_KEY;
+const S3_SECRET = process.env.FASTBOOT_S3_SECRET;
+
+let s3;
+
+if (S3_REGION || S3_KEY || S3_SECRET) {
+  s3 = new AWS.S3({
+    region: S3_REGION,
+    accessKeyId: S3_KEY,
+    secretAccessKey: S3_SECRET
+  });
+} else {
+  s3 = null;
+}
+
 const S3_PARAMS = {
   bucket: process.env.FASTBOOT_S3_BUCKET,
-  key: process.env.FASTBOOT_DEPLOY_INFO
+  key: process.env.FASTBOOT_DEPLOY_INFO,
+  s3: s3
 };
 
 const downloader = new S3Downloader(S3_PARAMS);
