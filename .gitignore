@@ -31,3 +31,4 @@ deploy-dist*
 .env
 current
 dist
+deploys
