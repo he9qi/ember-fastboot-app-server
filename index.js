@@ -30,14 +30,14 @@ if (S3_REGION || S3_KEY || S3_SECRET) {
 const downloader = new S3Downloader({
   bucket: process.env.FASTBOOT_S3_BUCKET,
   key: process.env.FASTBOOT_DEPLOY_INFO || "fastboot-deploy-info.json",
-  s3: s3,
   currentPath: process.env.DEPLOY_CURRENT_PATH,
-  baseArchivePath: process.env.BASE_ARCHIVE_PATH
+  baseArchivePath: process.env.BASE_ARCHIVE_PATH,
+  s3: s3
 });
 const notifier = new S3Notifier({
-  s3: s3,
   bucket: process.env.FASTBOOT_S3_BUCKET,
-  key: process.env.FASTBOOT_DEPLOY_INFO
+  key: process.env.FASTBOOT_DEPLOY_INFO,
+  s3: s3
 });
 
 let cache;
