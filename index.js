@@ -35,6 +35,7 @@ const downloader = new S3Downloader({
   baseArchivePath: process.env.BASE_ARCHIVE_PATH
 });
 const notifier = new S3Notifier({
+  s3: s3,
   bucket: process.env.FASTBOOT_S3_BUCKET,
   key: process.env.FASTBOOT_DEPLOY_INFO
 });
