@@ -1,9 +1,0 @@
-{
-  "assets": {
-    "assets/skunk-homepage.css": "assets/skunk-homepage-d41d8cd98f00b204e9800998ecf8427e.css",
-    "assets/skunk-homepage.js": "assets/skunk-homepage-5aa969a16c28e8f2c61afefd34cde60e.js",
-    "assets/vendor.css": "assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css",
-    "assets/vendor.js": "assets/vendor-1a127820fdb81b920375b5bd150ea1c0.js"
-  },
-  "prepend": ""
-}
