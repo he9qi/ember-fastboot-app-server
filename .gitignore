@@ -30,3 +30,4 @@ node_modules
 deploy-dist*
 .env
 current
+tmp
