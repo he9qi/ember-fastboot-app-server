@@ -27,7 +27,7 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-deploy-dist*
 .env
 current
-deploys
+deploys/deploy-dist*
+deploys/dist*
