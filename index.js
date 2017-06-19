@@ -36,8 +36,7 @@ const downloader = new S3Downloader({
 });
 const notifier = new S3Notifier({
   bucket: process.env.FASTBOOT_S3_BUCKET,
-  key: process.env.FASTBOOT_DEPLOY_INFO,
-  s3: s3
+  key: process.env.FASTBOOT_DEPLOY_INFO
 });
 
 let cache;
