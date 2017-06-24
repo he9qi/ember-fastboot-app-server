@@ -31,3 +31,4 @@ node_modules
 current
 deploys/deploy-dist*
 deploys/dist*
+tmp/*
