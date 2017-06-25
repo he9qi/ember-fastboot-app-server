@@ -15,9 +15,23 @@
     "NODE_ENV": {
       "value": "production"
     },
+    "BASE_ARCHIVE_PATH": {
+      "value": "deploys"
+    },
+    "DEPLOY_CURRENT_PATH": {
+      "value": "current"
+    },
     "FASTBOOT_DEPLOY_INFO": {
       "description": "Fastboot deploy info.",
       "value": "fastboot-deploy-info.json"
+    },
+    "FASTBOOT_S3_KEY": {
+      "description": "Fastboot S3 Key.",
+      "value": ""
+    },
+    "FASTBOOT_S3_SECRET": {
+      "description": "Fastboot S3 Secret.",
+      "value": ""
     },
     "FASTBOOT_S3_BUCKET": {
       "description": "Fastboot S3 bucket.",
