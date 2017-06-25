@@ -25,6 +25,10 @@
       "description": "Fastboot deploy info.",
       "value": "fastboot-deploy-info.json"
     },
+    "FASTBOOT_S3_REGION": {
+      "description": "Fastboot S3 Region.",
+      "value": ""
+    },
     "FASTBOOT_S3_KEY": {
       "description": "Fastboot S3 Key.",
       "value": ""
