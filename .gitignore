@@ -29,6 +29,6 @@ node_modules
 
 .env
 current
-deploys/deploy-dist*
-deploys/dist*
+deploy-dist*
+dist*
 tmp/*
