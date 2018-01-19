@@ -25,7 +25,7 @@
   "homepage": "https://github.com/he9qi/ember-fastboot-app-server",
   "dependencies": {
     "aws-sdk": "^2.3.4",
-    "fastboot-app-server": "^1.0.0-rc.5",
+    "fastboot-app-server": "^1.1.0",
     "fastboot-redis-cache": "git://github.com/he9qi/fastboot-redis-cache.git#allow-redis-url",
     "fastboot-s3-downloader": "git://github.com/he9qi/fastboot-s3-downloader.git#9f5e7ec7",
     "fastboot-s3-notifier": "0.1.2"
